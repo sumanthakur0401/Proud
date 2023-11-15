@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(202, 210, 255);
+    background: linear-gradient(90deg, var(--c1, rgb(179, 205, 254)), var(--c2, #cfddff) 25%, var(--c1, rgb(210, 226, 255)), var(--c2, rgb(209, 225, 255)) 100%) var(--x, 0)/ 400%;
+    color: rgb(3, 3, 3);
+    font-family: 'Exo 2', sans-serif;
+}
+.main{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    max-width: auto;
+    margin: 60px auto;
+    padding-top: 20px;
+}
+.loginShapeAnime{
+    height: 800px;
+    width: 500px;
+    background: rgba(131, 187, 255, 0.654);
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-right: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.anime{
+    margin-top: 100px;
+    height: 500px;
+}
+.loginShape{
+    height: 800px;
+    width: 500px;
+    background: rgba(202, 225, 251, 0.215);
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-left: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.form{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 10%;
+  }
+
+.formHeader{
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+.form input{
+    color: rgb(81, 137, 240);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    background: #77a1e550;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid white;
+}  
+.form input::placeholder{
+  color: rgba(255, 255, 255, 0.597);
+}
+.form button {
+    text-transform: uppercase;
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    color: #FFFFFF;
+    border: 1px solid rgb(81, 137, 240);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 5px;
+    -webkit-transition: all 0.3 ease;
+    transition: all .7s;
+    cursor: pointer;
+  }
+  .form button:hover {
+    --x:100%;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #000000;
+    font-size: 1rem;
+  }
+  .form .message a {
+    color: rgb(81, 137, 240);
+    text-decoration: none;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #86aaff;
+    margin-top: 2em;
+    padding: 0;
+    }
+
+.social-containner{
+    display: flex;
+    justify-content: space-around;
+}
+.social {
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 30px;
+	height: 50px;
+	width: 50px;
+    transition: .7s;
+}
+.social:hover {
+    --x:100%;
+}
+
+.proudLogo{
+        display: block;
+        height: 20px;
+        margin: 160px auto;
+}

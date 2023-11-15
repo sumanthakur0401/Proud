@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Proud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="loginVol_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <main class="main">
+        <div class="loginShape">
+        
+            <div class="form">
+                
+                <div class="formHeader">
+                    Login
+                </div>
+    
+                <p>Please enter your credentials to login.</p>
+    
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button onclick="window.location.href='home.html'">login</button>
+                <p class="message">Not registered? <a href="registerVol.html">Create an account</a></p>
+                <hr style="color: rgb(176, 41, 41);">
+                 
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="#" class="social"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="#" class="social"><i class="fab fa fa-google fa-2x"></i></a>
+                </div> 
+
+                <img src="assets/blueProudLogo.png" class="proudLogo">
+    
+            </div>
+        </div>
+        <div class="loginShapeAnime">
+            <div class="anime" id="animation">
+            </div>
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('animation'),
+                    path: 'assets/loginAnime.json',
+                    render: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    name: 'demo'
+                })
+            </script>
+    
+        </div>
+    </main>
+    
+</body>
+</html>

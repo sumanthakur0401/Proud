@@ -1,0 +1,337 @@
+body{
+    background-color: rgb(202, 210, 255);
+    background: linear-gradient(90deg, var(--c1, rgb(179, 205, 254)), var(--c2, #cfddff) 25%, var(--c1, rgb(210, 226, 255)), var(--c2, rgb(209, 225, 255)) 100%) var(--x, 0)/ 400%;
+    color: rgb(3, 3, 3);
+    font-family: 'Exo 2', sans-serif;
+}
+
+.leftSection{
+    float: left;
+    border-right: 1px solid rgb(255, 255, 255);
+    width: 300px;
+    height: 1095px;
+}
+.logo{
+    padding-top: 100px;
+    display: block;
+    height: 40px;
+    margin: 0 50px;
+}
+
+.dockList{
+    padding-top: 50px;
+}
+.dockList ul li{
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    list-style: none;
+}
+.dockList ul li a{
+    height: 10px;
+    text-align: center;
+    transition: 0.7s;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.dockList ul li a:hover{ --x: 100%;}
+
+.more{
+    padding-top: 350px;
+}
+.more ul li{
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    list-style: none;
+}
+.more ul li a{
+    height: 50px;
+    text-align: center;
+    transition: 0.7s;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.more ul li a:hover{ 
+    --x: 100%;
+}
+
+.midSection{
+    float: left;
+    width: 800px;
+    height: 1095px;
+    margin-left: 200px;
+}
+
+.empText{
+    font-size: 1.2rem;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.empText .heading{
+    font-weight: 600;
+}
+
+.bigCard{
+    height: 300px;
+    width: 800px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #8AC185;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.bigCard .content{
+    color: white;
+    font-size: 1.2rem;
+    align-content: center;
+    width: 700px;
+    height: 250px;
+    margin: 25px auto;
+}
+.bigCard .content .ngoName{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.list{
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.spaced {
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.spaced li {
+    width: 180px;
+}
+.hurry{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.moreButton{
+    text-transform: uppercase;
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, #c8dfc6), var(--c2, #f8f9f8) 25%, var(--c1, #5d9658), var(--c2, #689c63) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    color: #8AC185;
+    border: 1px solid #8AC185;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-transition: all 0.7;
+    transition: all .7s;
+    cursor: pointer;
+}
+.moreButton:hover {
+    --x:100%;
+    color: white;
+}
+
+.empTextTwo{
+    font-size: 1.2rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.empTextTwo .headingTwo{
+    font-weight: 600;
+}
+
+.wonderland{
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallCard{
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardText{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wonderMoreButton{
+    text-transform: uppercase;
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, rgb(200, 218, 252)), var(--c2, #eff3fd) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    width: 800px;
+    margin-top: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: #5060b2;
+    border: 1px solid #afbfe9;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-transition: all 0.7;
+    transition: all .7s;
+    cursor: pointer;
+}
+.wonderMoreButton:hover {
+    --x:100%;
+    color: white;
+}
+
+.rightSection{
+    margin-left: 250px;
+    float: left;
+    width: 450px;
+    height: 1095px;
+}
+
+.profileSection{
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.profileSection a{
+    transition: 0.7s;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.profileSection a:hover{ 
+    --x: 100%;
+}
+
+.profileDp{
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.location{
+    margin-top: 5px;
+    text-align: center;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.suggestion{
+    font-size: 1.2rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+.suggestion .sugHead{
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.selectText a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .7s;
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.selectText :hover{
+    --x:100%;
+}
+
+.suggestionList{
+    padding-top: 10px;
+}
+.suggestionList li{
+    transition: 0.7s;
+    border-radius: 10px;
+    display: flex;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    list-style: none;
+}
+.dp{
+    margin-left: 10px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.subHeading{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.suggestionList li a{
+    padding-left: 10px;
+    transition: 0.7s;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.suggestionList li a:hover{ 
+    --x: 100%;
+}
+.suggestionList li:hover{ 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --x: 100%;
+}
+
+.aboutList{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutList li{
+    padding: 2px;
+    color: rgb(81, 137, 240);
+}
+.aboutList li a{
+    height: 10px;
+    transition: 0.2s;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.aboutList li a:hover{ 
+    --x: 100%;
+    text-decoration: underline;
+}
+
+.createdText{
+    margin-top: 20px;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@media (max-width: 2000px){
+    .rightSection{
+        display: none;
+    }
+    .logo{
+        padding-top: 100px;
+        display: block;
+        height: 20px;
+        margin: 0 auto;
+    }
+}

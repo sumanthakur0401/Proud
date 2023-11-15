@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(202, 210, 255);
+    background: linear-gradient(90deg, var(--c1, rgb(179, 205, 254)), var(--c2, #cfddff) 25%, var(--c1, rgb(210, 226, 255)), var(--c2, rgb(209, 225, 255)) 100%) var(--x, 0)/ 400%;
+    color: rgb(3, 3, 3);
+    font-family: 'Exo 2', sans-serif;
+}
+
+.welcomeText{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.proudLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.choice{
+    display:flex;
+    justify-content: space-around;
+    margin: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.selectText a{
+    font-size: 6rem;
+    font-weight: 800;
+    transition: .7s;
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.selectText :hover{
+    --x:100%;
+}
+
+.shape{
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(159, 170, 255);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px){
+    .welcomeText{ font-size: 1.1rem; }
+    .proudLogo{height: 80px;}
+}
+@media (max-width: 767px){
+    .welcomeText{ font-size: 1rem; }
+    .proudLogo{height: 60px;}
+}
