@@ -16,7 +16,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 </head>
 <body>
-    <section class="leftSection">
+    
+    <section class="leftSection" id="leftBlur">
         <img src="assets/blueProudLogo.png" class="logo">
         
         <nav class="dockList">             
@@ -37,7 +38,7 @@
 
     </section>
 
-    <section class="midSection">
+    <section class="midSection" id="midBlur">
         <div class="empText">
             <div class="heading">
                 Empower Yourself:
@@ -70,7 +71,7 @@
                     <div>
                         Hurry!!! Only one slot left.
                     </div>
-                    <button class="moreButton">view more...</button>
+                    <button class="moreButton" onclick="toggle()">view more...</button>
                      
                 </div>
 
@@ -142,7 +143,7 @@
         <button class="wonderMoreButton">view all...</button>
     </section>
 
-    <section class="rightSection">
+    <section class="rightSection" id="rightBlur">
 
         <a href="/"><img src="assets/profileDp.png" class="profileDp"></a>
 
@@ -241,6 +242,90 @@
         </div>
         <div class="createdText">©2023 <img src="assets/blueProudLogo.png" height="15px" style="margin-left: 5px; margin-right: 5px;"> with love.</div>
             
+    </section>
+    
+    <script type="text/javascript">
+        function toggle(){
+            
+            var leftBlur = document.getElementById('leftBlur');
+            leftBlur.classList.toggle('active');
+           
+            var midBlur = document.getElementById('midBlur');
+            midBlur.classList.toggle('active');
+            
+            
+            var rightBlur = document.getElementById('rightBlur');
+            rightBlur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+    
+    <section class="container" id="popup">
+        
+        <img src="assets/closeIcon.png" class="closeButton" onclick="toggle()">
+
+        <img src="assets/blueProudLogo.png" height="50px" class="companyLogo">
+
+        <div class="mainHeading">
+            Join Us as volunteer teachers for a day!
+        </div>
+
+        <div class="companyName">
+            Saarthi
+        </div>
+
+        <div class="listOne">
+            <ul class="spacedOne">
+                <li><i class="fa fa-users fa-1x"></i> 5</li>
+                <li><i class="fa fa-compass fa-1x"></i> 09:00am</li>
+                <li><i class="fa fa-user fa-1x"></i> 20+</li>
+                <li><i class="fa fa-calendar fa-1x"></i> 25th july, 23</li>
+            </ul>
+        </div>
+
+        <div class="companyAddress">
+            #573, Village Kishangarh Near IT Park Chandigarh
+        </div>
+        <div class="set">
+            <div>
+                <h1 class="headingText">
+                    Description
+                </h1>
+                <h4 class="data">
+                    Hello there!
+                    We are excited to announce an incredible opportunity for you to make a difference! We are currently seeking five enthusiastic individuals to 
+                    volunteer as teachers for a day. Our mission is to inspire and empower
+                    the minds of approximately 120 children by offering classes in General
+                    Knowledge, Spoken English, Personality Development, and various other subjects.
+                    To ensure a vibrant and engaging learning environment, we kindly 
+                    request that applicants be 20 years of age or older. We believe that your experience and maturity will greatly benefit our young learners.
+                    Mark your calendars for the upcoming event, which will take place at a 
+                    beautiful location that fosters an atmosphere of curiosity and growth. 
+                    The date and time are specified above, and we are eagerly awaiting your presence.
+                    As a token of our appreciation for your generous contribution, breakfast will be provided complimentary to all volunteers. This will not only nourish your body but also fuel your spirit for the inspiring day ahead.
+                    We invite you to seize this opportunity and make a meaningful impact 
+                    on the lives of these children. Your small step has the potential to ignite
+                    a flame of knowledge and transform numerous lives.
+                    If you find yourself available on the mentioned date, we encourage you
+                    to apply for this extraordinary experience. Join us in this remarkable 
+                    journey where education and compassion intersect, and together, we 
+                    can create a brighter future.
+                    Thank you!
+                </h4>
+    
+                <h1 class="headingText">
+                    Responsibilty
+                </h1>
+    
+                <h4 class="data">
+                    Join us as a volunteer teacher and share your expertise with a group of 20-30 students. Teach what you're passionate about and make a positive impact.
+                </h4>
+            </div>
+        </div>
+
+        <button class="applyButton" onclick="toggle()">apply </button>
     </section>
 </body>
 </html>

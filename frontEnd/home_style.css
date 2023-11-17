@@ -3,6 +3,7 @@ body{
     background: linear-gradient(90deg, var(--c1, rgb(179, 205, 254)), var(--c2, #cfddff) 25%, var(--c1, rgb(210, 226, 255)), var(--c2, rgb(209, 225, 255)) 100%) var(--x, 0)/ 400%;
     color: rgb(3, 3, 3);
     font-family: 'Exo 2', sans-serif;
+    overflow: hidden;
 }
 
 .leftSection{
@@ -334,4 +335,147 @@ body{
         height: 20px;
         margin: 0 auto;
     }
+}
+
+.leftSection#leftBlur.active{
+    filter: blur(10px);
+}
+
+.midSection#midBlur.active{
+    filter: blur(10px);
+}
+
+.rightSection#rightBlur.active{
+    filter: blur(10px);
+}
+
+.container{
+    position:fixed;
+    border: 2px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    top:10%;
+    left:30%;
+    bottom:4px;
+    width:800px;
+    height: 900px;
+    overflow: auto;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #8AC185;
+    border-radius: 20px;
+    visibility: hidden;
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+.container#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .companyLogo{
+    padding-top: 50px;
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.container .mainHeading{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.container .companyName{
+    color: #f3ec78;
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.listOne{
+    color: white;
+    width: 650px;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.spacedOne{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .companyAddress{
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+.container .set{
+    position: relative;
+    min-height: 550px;
+    width: auto;
+}
+.container .headingText{
+    color: white;
+    padding-top: 10px;
+    padding-left: 90px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+.container .data{
+    color: white;
+    padding-left: 90px;
+    width: 650px;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.container .applyButton{
+    text-transform: uppercase;
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, #c8dfc6), var(--c2, #f8f9f8) 25%, var(--c1, #5d9658), var(--c2, #689c63) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    width: 250px;
+    height: 40px;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: #8AC185;
+    border: 1px solid #8AC185;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-transition: all 0.7;
+    transition: all .7s;
+    cursor: pointer;
+}
+.container .applyButton:hover {
+    --x:100%;
+    color: white;
+}
+.container .closeButton{
+    position: fixed;
+    height: 30px;
+    margin: 20px 20px;
+}
+.container .closeButton:hover{
+    cursor: pointer;
 }
