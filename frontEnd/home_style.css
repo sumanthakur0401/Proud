@@ -23,21 +23,24 @@ body{
     padding-top: 50px;
 }
 .dockList ul li{
-    padding: 25px;
+    padding: 35px;
     font-size: 1.2rem;
     font-weight: 600;
     list-style: none;
 }
 .dockList ul li a{
-    height: 10px;
     text-align: center;
     transition: 0.7s;
+    position: fixed;
     background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
-.dockList ul li a:hover{ --x: 100%;}
+.dockList ul li a:hover{ 
+    --x: 100%;
+    font-size: 1.5rem;
+}
 
 .more{
     padding-top: 350px;
@@ -59,6 +62,7 @@ body{
 }
 .more ul li a:hover{ 
     --x: 100%;
+    font-size: 1.5rem;
 }
 
 .midSection{
@@ -98,7 +102,7 @@ body{
     font-weight: 600;
 }
 .list{
-    padding-top: 30px;
+    margin-top: 30px;
     box-sizing: border-box;
 }
 .spaced {
@@ -106,7 +110,7 @@ body{
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0;
 }
 .spaced li {
@@ -157,7 +161,11 @@ body{
     width: 250px;
     border-radius: 20px;
     border: 1px solid white;
+    transition: .5s;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.smallCard:hover{
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 .cardText{

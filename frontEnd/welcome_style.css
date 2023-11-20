@@ -1,50 +1,357 @@
 body{
     background-color: rgb(202, 210, 255);
-    background: linear-gradient(90deg, var(--c1, rgb(179, 205, 254)), var(--c2, #cfddff) 25%, var(--c1, rgb(210, 226, 255)), var(--c2, rgb(209, 225, 255)) 100%) var(--x, 0)/ 400%;
-    color: rgb(3, 3, 3);
     font-family: 'Exo 2', sans-serif;
 }
 
+.topScreen{
+    background-image: url(assets/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 2200px;
+    position:fixed; 
+    width:100%; 
+    height:450px; 
+    top: 0px; 
+    left:0px; 
+}
+.header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid rgba(255, 255, 255, 0.372) ;
+}
+.navOne{
+    padding-top: 15px;
+    margin-left: 110px;
+}
+.logoProud{
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 10px;
+    height: 25px;
+}
+.navOne a{
+    transition: 0.5s;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 30px;
+    background: white;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.navOne a:hover{
+    background: rgba(255, 255, 255, 0.71);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navTwo{
+    padding-top: 10px;
+    margin-right: 20px;
+}
+.navTwo a{
+    transition: 0.7s;
+    padding-left: 30px;
+    background: white;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.notificationIcon{
+    position: fixed;
+    right: 240px;
+    padding-top: 5px;
+    height: 30px;
+    cursor: pointer;
+    filter: invert();
+    transition: 0.5s;
+}
+.notificationIcon:hover{
+    opacity: 0.7;
+}
+
+.loginButton{
+    background: white;
+    color: transparent;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    color: #0057ff;
+    border: 1px solid #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-transition: all 0.7;
+    transition: all .5s;
+    cursor: pointer;
+}
+.loginButton:hover{
+    background: rgb(215, 219, 226);
+    border: 1px solid rgb(215, 219, 226);  
+}
+.signupButton{
+    background: #0057ff;
+    color: transparent;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid #0057ff;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-transition: all 0.7;
+    transition: all .5s;
+    cursor: pointer;
+}
+.signupButton:hover{
+    background: #0042c6;
+    border: 1px solid #0048d7;  
+}
+
+.bigText{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.smallText{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.cardsSection{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 60px auto;
+    max-width: 1260px;
+    z-index: 4;
+}
+.transparentShape{
+    align-items: center;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: rgba(255,255,255,.15);
+    border: 0 solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 20px;
+    height: 40px;
+    justify-content: center;
+    padding: 26px 30px;
+    width: 100%;
+    color: transparent;    
+}
+.transparentShape:hover{
+    background-color: rgba(255, 255, 255, 0.358);
+}
+.shapeText{
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .3px;
+}
+.box {
+    align-items: center;
+    margin: 60px 1405px;
+    display: block;
+    background: #FFF;
+    border: solid 1px #bcbcbc;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, .1);
+    width: 500px;
+    height: 300px;
+    position: relative;
+    visibility: hidden;
+}
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #FFF;
+    position: absolute;
+    left: 400px;
+    top: -10px;
+    z-index: 1001;
+}
+.arrow-border {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #BBBBBB;
+    position: absolute;
+    top: -10px;
+    left: 400px;
+    z-index: 1000;
+}
+.box#popup.active{
+    visibility: visible;
+}
+.box hr {
+    height: 1px;
+    background-color: #0000002a;
+    border: none;
+}
+.box .notifHeading{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.box .notif{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 100px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/* .main{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    max-width: auto;
+    margin: 60px auto;
+    padding-top: 20px;
+}
+.about{
+    height: 800px;
+    width: 500px;
+    color: #417bcd;
+    font-size: 1.2rem;
+    background: rgba(202, 225, 251, 0.215);
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-left: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.why{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #417bcd;
+}
+.why .q{
+    margin-left: 220px;
+}
+.logoOne{
+    position: fixed;
+    top: 60px;
+    left: 160px;
+}
+.data{
+    padding-top: 20px;
+    text-align: justify;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.bold{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.readMore{
+    text-transform: uppercase;
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, rgb(210, 226, 255)), var(--c2, #e4eafc) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    width: 250px;
+    height: 40px;
+    margin: 50px auto;
+    display: block;
+    border-radius: 10px;
+    color: #417bcd;
+    border: 1px solid #b7d2f7;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-transition: all 0.7;
+    transition: all .7s;
+    cursor: pointer;
+}
+.readMore:hover {
+    --x:100%;
+    color: white;
+}
+
+.welcome{
+    height: 800px;
+    width: 500px;
+    background: rgba(131, 187, 255, 0.654);
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-right: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
 .welcomeText{
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 300px;
+    color: #417bcd;
     text-align: center;
 }
 
 .proudLogo{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto;
+    height: 50px;
 }
 
 .choice{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 50px;
     margin-left: 80px;
     margin-right: 80px;
 }
 
 .selectText a{
-    font-size: 6rem;
+    font-size: 1.5rem;
     font-weight: 800;
     transition: .7s;
     background-color: #f3ec78;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #7093e3) 25%, var(--c1, rgb(40, 91, 185)), var(--c2, rgb(40, 91, 185)) 100%) var(--x, 0)/ 400%;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 .selectText :hover{
     --x:100%;
+    font-size: 2.5rem;
 }
 
 .shape{
     width: 500px;
     height: 300px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 10px;
     background-color: rgb(159, 170, 255);
@@ -59,3 +366,84 @@ body{
     .welcomeText{ font-size: 1rem; }
     .proudLogo{height: 60px;}
 }
+
+.container{
+    position:fixed;
+    border: 2px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    top:10%;
+    left:30%;
+    bottom:4px;
+    width:800px;
+    height: 900px;
+    overflow: auto;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgb(202, 210, 255);
+    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #7093e3) 25%, var(--c1, rgb(40, 91, 185)), var(--c2, rgb(40, 91, 185)) 100%) var(--x, 0)/ 400%;
+    border-radius: 20px;
+    visibility: hidden;
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+.container#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .companyLogo{
+    padding-top: 50px;
+    display: block;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.container .popData{
+    color: white;
+    display: block;
+    padding-top: 30px;
+    font-size: 1.2rem;
+    width: 650px;
+    text-align: justify;
+    margin: 0 auto;
+}
+.container .popData .boldText{
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+
+.container .closeButton{
+    text-transform: uppercase;
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, var(--c1, rgb(200, 218, 252)), var(--c2, #eff3fd) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    color: transparent;
+    width: 250px;
+    height: 40px;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: #316ab9;
+    border: 1px solid #6091d5;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-transition: all 0.7;
+    transition: all .7s;
+    cursor: pointer;
+}
+.container .closeButton:hover {
+    --x:100%;
+    color: white;
+}
+
+.about#leftBlur.active{
+    filter: blur(10px);
+}
+
+.welcome#rightBlur.active{
+    filter: blur(10px);
+} */

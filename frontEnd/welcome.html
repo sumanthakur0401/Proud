@@ -12,17 +12,104 @@
     <link rel="stylesheet" href="welcome_style.css">
 </head>
 <body>
+    <section class="topScreen">
+        <a href="/"><img src="assets/whiteProudLogo.png" class="logoProud"></a>
+        <header class="header">
+            <nav class="navOne">
+                <a href="/">For You</a>
+                <a href="/">Discover</a>
+                <a href="/">Hire</a>
+                <a href="/">Assets</a>
+                <a href="/">Jobs</a>
+            </nav>
+            <nav class="navTwo">
+                <img src="assets/icons/notification.png" class="notificationIcon" onclick="toggle()">
+                <button class="loginButton" onclick="window.location.href='loginVol.html'">Log In</button>
+                <button class="signupButton" onclick="window.location.href='loginVol.html'">Sign Up</button>
+            </nav>
+        </header>
+
+        <h1 class="bigText">Connect Globally On Various Journeys</h1>
+        <h2 class="smallText">Join Proud, the world's largest platform to provide kindness!</h2>
+
+        <section class="cardsSection"> 
+            <a href="/" class="transparentShape">
+                <div class="shapeText">Unite for change: Connecting volunteers with causes</div>
+            </a>
+            <a href="/" class="transparentShape">
+                <div class="shapeText">Simplified giving: Easy ways to make a difference</div>
+            </a>
+            <a href="/" class="transparentShape">
+                <div  class="shapeText">Join the global good: Proud, where every click counts</div>
+            </a>
+        </section>
+        
+    </section>
+
+    <div class="box" id="popup">
+        <div class="arrow"></div>
+        <div class="arrow-border" ></div>
+
+        <h1 class="notifHeading">Your Notifications</h1>
+        <hr>
+        <h2 class="notif">You have no new notifications.</h2>
+
+    </div>
+
+    <script type="text/javascript">
+        function toggle(){
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+
     
-    <div class="welcomeText">
-        Lets get started with
-    </div>
+    <!-- <section class="main">
+        <div class="about" id="leftBlur">
+            <div class="why">
+                <di>Why</di>
+                <img src="assets/blueProudLogo.png" height="50px" class="logoOne">
+                <div class="q">?</div> 
+            </div>
+            <div class="data">
+                Greetings🌈, fellow changemakers and difference-makers! We're thrilled to introduce you to Proud, the platform that transforms ordinary moments into extraordinary acts of kindness. At Proud, we're not just building a platform; we're fostering a community of compassion, connection, and change.
+                <br><br>
+                We're the matchmakers for a new kind of love story💖 – the one between NGOs and volunteers. Our platform seamlessly connects NGOs with upcoming events to the superheroes, aka volunteers, who are ready to lend a helping hand. It's like a matchmaking dance where everyone leaves with a smile.
+                <br><br>
+                Join us on this journey, where every small action ripples into something extraordinary. Together, let's turn compassion into a movement, one click at a time.
+                <br><br>
+                Ready to be Proud? Join us today and be a part of something truly special! 🌟💙🌍
+            </div>
 
-    <img src="assets/proudLogo.png" height="100px" class="proudLogo">
+            <button class="readMore" onclick="toggle()">Read More </button>
+        </div>
+    
+        <div class="welcome" id="rightBlur">
+            <div class="welcomeText">
+                Lets get started with
+            </div>
+        
+            <img src="assets/blueProudLogo.png" class="proudLogo">
+        
+            <div class="choice">
+                <span class="selectText"><a href="loginVol.html">Recruiter</a></span>
+                <span class="selectText"><a href="loginVol.html">Volunteer</a></span>
+            </div>
+        </div>
+    </section>
 
-    <div class="choice">
-        <span class="selectText"><a href="loginVol.html">Recruiter</a></span>
-        <span class="selectText"><a href="loginVol.html">Volunteer</a></span>
-    </div>
+    <script type="text/javascript">
+        function toggle(){
+            
+            var leftBlur = document.getElementById('leftBlur');
+            leftBlur.classList.toggle('active');
+           
+            var rightBlur = document.getElementById('rightBlur');
+            rightBlur.classList.toggle('active');
 
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script> -->
 </body>
 </html>
