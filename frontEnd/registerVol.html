@@ -15,50 +15,48 @@
 </head>
 <body>
     <main class="main">
-        <div class="loginShape">
-        
+
+        <div class="signupShape">
             <div class="form">
-                
                 <div class="formHeader">
-                    Register
+                    Create an account
                 </div>
     
-                <p>Please enter your details to register.</p>
-    
-                <input type="text" placeholder="full name"/>
-                <input type="text" placeholder="username"/>
-                <input type="email" placeholder="email"/>
-                <input type="password" placeholder="password"/>
-                <button>register</button>
-                <p class="message">Already have an account? <a href="loginVol.html">Login</a></p>
-                <hr style="color: rgb(176, 41, 41);">
-                 
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href="#" class="social"><i class="fa fa-twitter fa-2x"></i></a>
-                    <a href="#" class="social"><i class="fab fa fa-google fa-2x"></i></a>
+                <p class="message">Already have an account? <a href="loginVol.html" >Sign in</a></p>
+                
+                <div class="socialContainer">
+                    <div class="socialButton">
+                        <img src="assets/icons/googleIconPackage/googleColor.png" class="socialIcon">
+                    </div>   
+                    <div class="socialButton">
+                        <img src="assets/icons/facebookIconPackage/facebookColor.png" class="socialIcon">
+                    </div> 
+                    <div class="socialButton">
+                        <img src="assets/icons/appleIconPackage/appleWhite.png" class="socialIcon">
+                    </div> 
                 </div> 
 
-                <img src="assets/blueProudLogo.png" class="proudLogo">
-    
+                <h2 class="divLine"><span>or</span></h2>
+
+                <p class="hint">Full name</p>
+                <input type="text" placeholder="fullname"/>
+
+                <p class="hint">Username</p>
+                <input type="text" placeholder="username"/>
+
+                <p class="hint">Email address</p>
+                <input type="text" placeholder="email"/>
+
+                <p class="hint">Password</p>
+                <input type="password" placeholder="password"/>
+
+                <button class="continue" onclick="window.location.href='home.html'">Continue</button>
+                      
             </div>
-        </div>
-        <div class="loginShapeAnime">
-            <div class="anime" id="animation">
-            </div>
-            <script>
-                var animation = bodymovin.loadAnimation({
-                    container: document.getElementById('animation'),
-                    path: 'assets/registerAnime.json',
-                    render: 'svg',
-                    loop: true,
-                    autoplay: true,
-                    name: 'demo'
-                })
-            </script>
-    
-        </div>
-    </main>
+        </div>   
+        
+        <img src="assets/whiteProudLogo.png" class="whiteLogo">
+</main>
     
 </body>
 </html>

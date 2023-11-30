@@ -1,6 +1,7 @@
 body{
     background-color: rgb(202, 210, 255);
-    background-image: url("assets/catsBg.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)), url("assets/catsBg.jpg");
     background-size: 2220px 1380px;
     font-family: 'Exo 2', sans-serif;
 }

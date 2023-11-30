@@ -16,24 +16,27 @@ body{
 .header{
     height: 60px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-bottom:1px solid rgba(255, 255, 255, 0.372) ;
 }
 .navOne{
-    padding-top: 15px;
-    margin-left: 110px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
 }
+
 .logoProud{
-    position: absolute;
-    padding-top: 15px;
-    padding-left: 10px;
     height: 25px;
+    transition: .3s;
+}
+.logoProud:hover{
+    opacity: 60%;
 }
 .navOne a{
-    transition: 0.5s;
+    transition: 0.3s;
     font-size: 1.2rem;
     font-weight: 600;
-    padding-left: 30px;
     background: white;
     color: transparent;
     -webkit-background-clip: text;
@@ -47,30 +50,27 @@ body{
 }
 
 .navTwo{
-    padding-top: 10px;
-    margin-right: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .navTwo a{
     transition: 0.7s;
-    padding-left: 30px;
     background: white;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
-.notificationIcon{
-    position: fixed;
-    right: 240px;
-    padding-top: 5px;
-    height: 30px;
-    cursor: pointer;
-    filter: invert();
-    transition: 0.5s;
-}
-.notificationIcon:hover{
-    opacity: 0.7;
-}
 
+.fa-bell{
+    font-size: 1.5rem;
+    color: white;
+    transition: .3s;
+}
+.fa-bell:hover{
+    color: rgb(228, 225, 225);
+}
 .loginButton{
     background: white;
     color: transparent;
@@ -82,7 +82,7 @@ body{
     font-size: 1rem;
     font-weight: 600;
     -webkit-transition: all 0.7;
-    transition: all .5s;
+    transition: all .3s;
     cursor: pointer;
 }
 .loginButton:hover{
@@ -92,7 +92,6 @@ body{
 .signupButton{
     background: #0057ff;
     color: transparent;
-    margin-left: 10px;
     width: 100px;
     height: 40px;
     border-radius: 20px;
@@ -101,7 +100,7 @@ body{
     font-size: 1rem;
     font-weight: 600;
     -webkit-transition: all 0.7;
-    transition: all .5s;
+    transition: all .3s;
     cursor: pointer;
 }
 .signupButton:hover{

@@ -12,320 +12,242 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 </head>
+
+
+
+
 <body>
+
+    <header class="header">
     
-    <section class="leftSection" id="leftBlur">
-        <img src="assets/blueProudLogo.png" class="logo">
-        
-        <nav class="dockList">             
-                <ul>
-                    <li><a href="/"><i class="fa fa-home fa-1x"></i>  Home</a></li>
-                    <li><a href="/"><i class="fa fa-search fa-1x"></i>  Search</a></li>
-                    <li><a href="/"><i class="fa fa-compass fa-1x"></i>  Explore</a></li>
-                    <li><a href="/"><i class="fa fa-comments fa-1x"></i>  Message</a></li>
-                    <li><a href="/"><i class="fa fa-bell fa-1x"></i>  Notifications</a></li>
-                    <li><a href="/"><i class="fa fa-user fa-1x"></i>  Profile</a></li>
-                </ul>
+        <nav class="navOne">
+            <a href="/"><img src="assets/proudLogo.png" class="logoProud"></a>
+            <a href="/">Home</a>
+            <a href="/">Wonderland</a>
+            <a href="/">Moments</a>
+            <a href="/">Info</a>
         </nav>
-        <nav class="more">             
-            <ul>
-                <li><a href="/"><i class="fa fa-bars fa-1x"></i>  More</a></li>
-            </ul>
-    </nav>
+    
+        <input class="search" type="text" placeholder="Search..."/>
+    
+        <nav class="navTwo">
+            <div class="messageBox">
+                <div class="messageIcon">
+                    <i class="fa-regular fa-message"></i>
+                </div>
+                <div class="messageHoverBox">
+                    Messages
+                </div>
+            </div>
+            
+            <div class="notificationBox">
+                <div class="notificationIcon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="notificationHoverBox">
+                    Notifications
+                </div>
+            </div>
+            
+            <div class="profileBox">
+                <div class="profileIcon">
+                    <img src="assets/profileDp.png">
+                </div>
+                <div class="profileHoverBox">
+                    Profile
+                </div>
+            </div>
+           
+     
+            
+    
+        </nav>
+    </header>
 
+
+    <section class="moments">
+        <div class="scrollmenu">
+            <img src="assets/icons/addMore.png" class="addIcon">
+
+            <div class="proudMoments">
+                
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+            <div class="proudMoments">
+
+            </div>
+          </div>
+    </section>
+    <section class="recentUpdateBox">
+        <div class="recentUpdateBoxData">
+            
+        </div>
     </section>
 
-    <section class="midSection" id="midBlur">
-        <div class="empText">
-            <div class="heading">
-                Empower Yourself:
-            </div>
-            <div>
-                Be a part of upcoming volunteer activities and change lives!
-            </div>
-        </div>
-        <div class="bigCard">
-            <div class="content">
-
-                <div class="workText">
-                    Join us as volunteer teacher for a day!
-                </div>
-
-                <div class="ngoName">
-                    Saarthi
-                </div>
-
-                <div class="list">
-                    <ul class="spaced">
-                        <li><i class="fa fa-users fa-1x"></i> 5</li>
-                        <li><i class="fa fa-compass fa-1x"></i> 09:00am</li>
-                        <li><i class="fa fa-user fa-1x"></i> 20+</li>
-                        <li><i class="fa fa-calendar fa-1x"></i> 25th july, 23</li>
-                    </ul>
-                </div>
-
-                <div class="hurry">
-                    <div>
-                        Hurry!!! Only one slot left.
-                    </div>
-                    <button class="moreButton" onclick="toggle()">view more...</button>
-                     
-                </div>
-
-            </div>
-        </div>
-
-        <div class="empTextTwo">
-            <div class="headingTwo">
-                Discover the NGO wonderland: 
-            </div>
-            <div>
-                Explore categories and find your Philanthropic Passion!
-            </div>
+    <div class="suggestionText">
+        <div class="suggestionColumn">
+            <p class="referenceText">
+                For You
+            </p>
+            <a href="/" class="viewAllButton">
+                view all
+            </a>
         </div>
         
-        <div class="wonderland">
-            <div class="smallCard" style="background-color: #efd39b;">
-                <div class="animeAnimal" id="animationAnimal" style="height: 250px;">
+        <hr class="horizontalLine"/>
+    </div>
+    
+    
+    <section class="forYouSection">
+        <div class="suggestedNgoColumn">
+
+            <div class="ngoBox" >
+                <div class="ngoDisplayPicture">
+                    
                 </div>
-                <script>
-                    var animation = bodymovin.loadAnimation({
-                        container: document.getElementById('animationAnimal'),
-                        path: 'assets/animalAnime.json',
-                        render: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        name: 'demo'
-                    })
-                </script>
-                <div class="cardText">
-                    Animal Welfare
+                <div class="ngoDetailBox" Id="boxOne">
+
                 </div>
             </div>
-            <div class="smallCard" style="background-color: #FFAEC9;">
-                <div class="animeHealth" id="animationHealth" style="height: 250px;">
+
+            <div class="ngoBox" >
+                <div class="ngoDisplayPicture">
+                    
                 </div>
-                <script>
-                    var animation = bodymovin.loadAnimation({
-                        container: document.getElementById('animationHealth'),
-                        path: 'assets/healthAnime.json',
-                        render: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        name: 'demo'
-                    })
-                </script>
-                <div class="cardText">
-                    Health
+                <div class="ngoDetailBox" Id="boxTwo">
+
                 </div>
             </div>
-            <div class="smallCard" style="background-color: #9c8fe6;">
-                <div class="animeEducation" id="animationEdu" style="height: 250px;">
+
+            <div class="ngoBox" >
+                <div class="ngoDisplayPicture">
+                    
                 </div>
-                <script>
-                    var animation = bodymovin.loadAnimation({
-                        container: document.getElementById('animationEdu'),
-                        path: 'assets/educationAnime.json',
-                        render: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        name: 'demo'
-                    })
-                </script>
-                <div class="cardText">
-                    Education
+                <div class="ngoDetailBox" Id="boxThree">
+
                 </div>
             </div>
+
+            <div class="ngoBox" >
+                <div class="ngoDisplayPicture">
+                    
+                </div>
+                <div class="ngoDetailBox" Id="boxFour">
+
+                </div>
+            </div>
+            
+            
         </div>
-        <button class="wonderMoreButton">view all...</button>
     </section>
 
-    <section class="rightSection" id="rightBlur">
 
-        <a href="/"><img src="assets/profileDp.png" class="profileDp"></a>
-
-        <div class="profileSection">
-            <a href="/">
-                Yash Thakur
+    <div class="nearYouBox">
+        <div class="nearYouColumn">
+            <div class="nearYouText">
+                Near You <p> (Chandigarh)</p>
+            </div>
+            <a href="/" class="viewAllButton">
+                view all
             </a>
         </div>
 
-        <div class="location">
-            <i class="fa fa-map-marker fa-1x"></i> Chandigarh, IN 
-        </div>
+        <hr class="horizontalLine"/>
+    </div>
 
-        <div class="suggestion">
-            <div class="sugHead">
-                Suggested NGOs for you 
-                <span class="selectText"><a href="loginVol.html">see all</a></span>
+    <section class="forYouSection">
+        <div class="suggestedNgoColumn">
+
+            <div class="ngoBox" >
+                <div class="ngoDisplayPicture">
+                    
+                </div>
+                <div class="ngoDetailBox" Id="boxOne">
+
+                </div>
             </div>
 
-            <div class="suggestionList">             
-                
-                    <li>
-                        <div>
-                        <img src="assets/helpAgeIndia.jpg" height="50px" class="dp">
-                        </div>
-                        <a href="/"> HelpAge India
-                            <div class="subHeading">Working with and for...</div>
-                        </a>
-                    </li>
+            <div class="ngoBox" >
+                <div class="ngoDisplayPicture">
+                    
+                </div>
+                <div class="ngoDetailBox" Id="boxTwo">
 
-                    <li>
-                        <div>
-                        <img src="assets/nanheKadam.jpg" height="50px" class="dp">
-                        </div>
-                        <a href="/"> Nanhe Kadam
-                            <div class="subHeading">Nanhe Kadam is one of the most...</div></a>
-                        
-                    </li>
-
-                    <li>
-                        <div>
-                        <img src="assets/arriveSafe.png" height="50px" class="dp">
-                        </div>
-                        <a href="/"> ArriveSAFE
-                            <div class="subHeading">Educating people about... </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <div>
-                        <img src="assets/salamZindgi.jpg" height="50px" class="dp">
-                        </div>
-                        <a href="/"> Salaam Zindagi
-                            <div class="subHeading">Salaam Zindagi Trust aims...</div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <div>
-                        <img src="assets/eduCare.jpeg" height="50px" class="dp">
-                        </div>
-                        <a href="/"> EduCARE India
-                            <div class="subHeading">EduCARE India works at...</div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <div>
-                        <img src="assets/navChetna.jpeg" height="50px" class="dp">
-                        </div>
-                        <a href="/"> Nav Chetna
-                            <div class="subHeading">It helps the under privileged...</div>
-                        </a>
-                    </li>
-    
+                </div>
             </div>
-        </div>
-        <div class="aboutList">             
-                <li><a href="/"> About</a></li>
-                <li>.</li>
-                <li><a href="/"> Help</a></li>
-                <li>.</li>
-                <li><a href="/"> Press</a></li>
-                <li>.</li>
-                <li><a href="/"> API</a></li>
-                <li>.</li>
-                <li><a href="/"> Jobs</a></li>
-                <li>.</li>
-                <li><a href="/"> Privacy</a></li>
-                <li>.</li>
-                <li><a href="/"> Terms</a></li>
-                <li>.</li>
-                <li><a href="/"> Location</a></li>
-                <li>.</li>
-                <li><a href="/"> Language</a></li>
-        </div>
-        <div class="createdText">©2023 <img src="assets/blueProudLogo.png" height="15px" style="margin-left: 5px; margin-right: 5px;"> with love.</div>
+
+            <div class="ngoBox" >
+                <div class="ngoDisplayPicture">
+                    
+                </div>
+                <div class="ngoDetailBox" Id="boxThree">
+
+                </div>
+            </div>
+
+            <div class="ngoBox" >
+                <div class="ngoDisplayPicture">
+                    
+                </div>
+                <div class="ngoDetailBox" Id="boxFour">
+
+                </div>
+            </div>
             
+            
+        </div>
     </section>
     
-    <script type="text/javascript">
-        function toggle(){
-            
-            var leftBlur = document.getElementById('leftBlur');
-            leftBlur.classList.toggle('active');
-           
-            var midBlur = document.getElementById('midBlur');
-            midBlur.classList.toggle('active');
-            
-            
-            var rightBlur = document.getElementById('rightBlur');
-            rightBlur.classList.toggle('active');
-
-            var popup = document.getElementById('popup');
-            popup.classList.toggle('active');
-        }
-    </script>
-    
-    <section class="container" id="popup">
-        
-        <img src="assets/closeIcon.png" class="closeButton" onclick="toggle()">
-
-        <img src="assets/blueProudLogo.png" height="50px" class="companyLogo">
-
-        <div class="mainHeading">
-            Join Us as volunteer teachers for a day!
-        </div>
-
-        <div class="companyName">
-            Saarthi
-        </div>
-
-        <div class="listOne">
-            <ul class="spacedOne">
-                <li><i class="fa fa-users fa-1x"></i> 5</li>
-                <li><i class="fa fa-compass fa-1x"></i> 09:00am</li>
-                <li><i class="fa fa-user fa-1x"></i> 20+</li>
-                <li><i class="fa fa-calendar fa-1x"></i> 25th july, 23</li>
-            </ul>
-        </div>
-
-        <div class="companyAddress">
-            #573, Village Kishangarh Near IT Park Chandigarh
-        </div>
-        <div class="set">
-            <div>
-                <h1 class="headingText">
-                    Description
-                </h1>
-                <h4 class="data">
-                    Hello there!
-                    We are excited to announce an incredible opportunity for you to make a difference! We are currently seeking five enthusiastic individuals to 
-                    volunteer as teachers for a day. Our mission is to inspire and empower
-                    the minds of approximately 120 children by offering classes in General
-                    Knowledge, Spoken English, Personality Development, and various other subjects.
-                    To ensure a vibrant and engaging learning environment, we kindly 
-                    request that applicants be 20 years of age or older. We believe that your experience and maturity will greatly benefit our young learners.
-                    Mark your calendars for the upcoming event, which will take place at a 
-                    beautiful location that fosters an atmosphere of curiosity and growth. 
-                    The date and time are specified above, and we are eagerly awaiting your presence.
-                    As a token of our appreciation for your generous contribution, breakfast will be provided complimentary to all volunteers. This will not only nourish your body but also fuel your spirit for the inspiring day ahead.
-                    We invite you to seize this opportunity and make a meaningful impact 
-                    on the lives of these children. Your small step has the potential to ignite
-                    a flame of knowledge and transform numerous lives.
-                    If you find yourself available on the mentioned date, we encourage you
-                    to apply for this extraordinary experience. Join us in this remarkable 
-                    journey where education and compassion intersect, and together, we 
-                    can create a brighter future.
-                    Thank you!
-                </h4>
-    
-                <h1 class="headingText">
-                    Responsibilty
-                </h1>
-    
-                <h4 class="data">
-                    Join us as a volunteer teacher and share your expertise with a group of 20-30 students. Teach what you're passionate about and make a positive impact.
-                </h4>
-            </div>
-        </div>
-
-        <button class="applyButton" onclick="toggle()">apply </button>
-    </section>
 </body>
 </html>

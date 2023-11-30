@@ -1,489 +1,337 @@
 body{
-    background-color: rgb(202, 210, 255);
-    background: linear-gradient(90deg, var(--c1, rgb(179, 205, 254)), var(--c2, #cfddff) 25%, var(--c1, rgb(210, 226, 255)), var(--c2, rgb(209, 225, 255)) 100%) var(--x, 0)/ 400%;
+    background-color: rgb(255, 255, 255);
     color: rgb(3, 3, 3);
     font-family: 'Exo 2', sans-serif;
     overflow: hidden;
-}
-
-.leftSection{
-    float: left;
-    border-right: 1px solid rgb(255, 255, 255);
-    width: 300px;
-    height: 1095px;
-}
-.logo{
-    padding-top: 100px;
     display: block;
-    height: 40px;
-    margin: 0 50px;
+    font-size: 1rem;
 }
 
-.dockList{
-    padding-top: 50px;
-}
-.dockList ul li{
-    padding: 35px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    list-style: none;
-}
-.dockList ul li a{
-    text-align: center;
-    transition: 0.7s;
+
+
+.header{
+    display: flex;
     position: fixed;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    background-color: white;
+    justify-content: space-between;
+    border-bottom:1px solid rgba(85, 85, 85, 0.171) ;
+    width:100%; 
+    height: 60px;
+    top: 0px; 
+    left:0px; 
+    align-items: center;
 }
-.dockList ul li a:hover{ 
-    --x: 100%;
-    font-size: 1.5rem;
-}
-
-.more{
-    padding-top: 350px;
-}
-.more ul li{
-    padding: 25px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    list-style: none;
-}
-.more ul li a{
-    height: 50px;
-    text-align: center;
-    transition: 0.7s;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-.more ul li a:hover{ 
-    --x: 100%;
-    font-size: 1.5rem;
-}
-
-.midSection{
-    float: left;
-    width: 800px;
-    height: 1095px;
-    margin-left: 200px;
-}
-
-.empText{
-    font-size: 1.2rem;
-    padding-top: 100px;
-    padding-bottom: 20px;
-}
-.empText .heading{
-    font-weight: 600;
-}
-
-.bigCard{
-    height: 300px;
-    width: 800px;
-    border-radius: 20px;
-    border: 1px solid white;
-    background-color: #8AC185;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.bigCard .content{
-    color: white;
-    font-size: 1.2rem;
-    align-content: center;
-    width: 700px;
-    height: 250px;
-    margin: 25px auto;
-}
-.bigCard .content .ngoName{
-    font-size: 2rem;
-    font-weight: 600;
-}
-.list{
-    margin-top: 30px;
-    box-sizing: border-box;
-}
-.spaced {
-    height: 100%;
-    padding: 0;
-    list-style: none;
+.navOne{
+    width: 600px;
     display: flex;
     justify-content: space-around;
-    margin: 0;
-}
-.spaced li {
-    width: 180px;
-}
-.hurry{
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-between;
-}
-.moreButton{
-    text-transform: uppercase;
-    background-color: #f3ec78;
-    background: linear-gradient(90deg, var(--c1, #c8dfc6), var(--c2, #f8f9f8) 25%, var(--c1, #5d9658), var(--c2, #689c63) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    width: 250px;
-    height: 40px;
-    border-radius: 10px;
-    color: #8AC185;
-    border: 1px solid #8AC185;
-    font-size: 1rem;
-    font-weight: 600;
-    -webkit-transition: all 0.7;
-    transition: all .7s;
-    cursor: pointer;
-}
-.moreButton:hover {
-    --x:100%;
-    color: white;
 }
 
-.empTextTwo{
-    font-size: 1.2rem;
-    padding-top: 50px;
-    padding-bottom: 20px;
+.logoProud{
+    height: 25px;
+    transition: .3s;
 }
-.empTextTwo .headingTwo{
-    font-weight: 600;
+.logoProud:hover{
+    opacity: 60%;
 }
-
-.wonderland{
-    display: flex;
-    justify-content: space-between;
-}
-
-.smallCard{
-    height: 300px;
-    width: 250px;
-    border-radius: 20px;
-    border: 1px solid white;
-    transition: .5s;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.smallCard:hover{
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-}
-
-.cardText{
+.navOne a{
+    transition: 0.3s;
     font-size: 1.2rem;
     font-weight: 600;
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.wonderMoreButton{
-    text-transform: uppercase;
-    background-color: #f3ec78;
-    background: linear-gradient(90deg, var(--c1, rgb(200, 218, 252)), var(--c2, #eff3fd) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    width: 800px;
-    margin-top: 40px;
-    height: 40px;
-    border-radius: 10px;
-    color: #5060b2;
-    border: 1px solid #afbfe9;
-    font-size: 1rem;
-    font-weight: 600;
-    -webkit-transition: all 0.7;
-    transition: all .7s;
-    cursor: pointer;
-}
-.wonderMoreButton:hover {
-    --x:100%;
-    color: white;
-}
-
-.rightSection{
-    margin-left: 250px;
-    float: left;
-    width: 450px;
-    height: 1095px;
-}
-
-.profileSection{
-    padding-top: 20px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-align: center;
-}
-.profileSection a{
-    transition: 0.7s;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+    background: rgb(0, 0, 0);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
-.profileSection a:hover{ 
-    --x: 100%;
-}
-
-.profileDp{
-    display: block;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    height: 200px;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-}
-
-.location{
-    margin-top: 5px;
-    text-align: center;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
+.navOne a:hover{
+    background: rgba(15, 15, 15, 0.71);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
-.suggestion{
-    font-size: 1.2rem;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-}
-.suggestion .sugHead{
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-}
-.selectText a{
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: .7s;
-    background-color: #f3ec78;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-.selectText :hover{
-    --x:100%;
-}
-
-.suggestionList{
-    padding-top: 10px;
-}
-.suggestionList li{
-    transition: 0.7s;
-    border-radius: 10px;
-    display: flex;
-    padding-top: 20px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    list-style: none;
-}
-.dp{
-    margin-left: 10px;
-    border-radius: 50%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.subHeading{
+.search{
+    background-color: rgba(192, 192, 192, 0.285);
+    width: 1000px;
+    height: 30px;
+    padding-left: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid rgba(170, 170, 170, 0.407);
     font-size: 1rem;
+    font-weight: 600;
+    color: #2a2a2a;
+    transition: .2s;
+}
+.search::placeholder{
+    color: #b6b6b6;
     font-weight: 400;
 }
-.suggestionList li a{
-    padding-left: 10px;
-    transition: 0.7s;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-.suggestionList li a:hover{ 
-    --x: 100%;
-}
-.suggestionList li:hover{ 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    --x: 100%;
+.search:hover{
+    border: 2px solid rgb(0, 0, 0);
 }
 
-.aboutList{
-    list-style: none;
+.navTwo{
+    align-items: center;
     display: flex;
-    flex-wrap: wrap;
+    width: 250px;
+    justify-content: space-around;
 }
-.aboutList li{
-    padding: 2px;
-    color: rgb(81, 137, 240);
+.messageIcon{
+    margin-left: 25px;
 }
-.aboutList li a{
-    height: 10px;
-    transition: 0.2s;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+.messageHoverBox{
+    position: absolute;
+    display: none;
+    width: 75px;
+    height: 20px;
+    margin-top: 19px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(59, 59, 59, 0.68);
+    color: white;
+    border-radius: 5px;
+    font-size: .8rem;
+    font-weight: 400;
 }
-.aboutList li a:hover{ 
-    --x: 100%;
-    text-decoration: underline;
+.fa-message{
+    font-size: 1.4rem;
+    transition: .3s;
+    cursor: pointer;
 }
-
-.createdText{
-    margin-top: 20px;
-    background: linear-gradient(90deg, var(--c1, rgb(81, 137, 240)), var(--c2, #86aaff) 25%, var(--c1, rgb(53, 111, 218)), var(--c2, rgb(53, 111, 218)) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+.fa-message:hover{
+    opacity: 0.6;
 }
-
-@media (max-width: 2000px){
-    .rightSection{
-        display: none;
-    }
-    .logo{
-        padding-top: 100px;
-        display: block;
-        height: 20px;
-        margin: 0 auto;
-    }
+.messageIcon:hover + .messageHoverBox{
+    display: block;
 }
 
-.leftSection#leftBlur.active{
-    filter: blur(10px);
+.notificationIcon{
+    margin-left: 32px;
+}
+.notificationHoverBox{
+    position: absolute;
+    display: none;
+    width: 90px;
+    height: 20px;
+    margin-top: 18px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(59, 59, 59, 0.68);
+    color: white;
+    border-radius: 5px;
+    font-size: .8rem;
+    font-weight: 400;
+}
+.fa-bell{
+    font-size: 1.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+.fa-bell:hover{
+    opacity: 0.6;
+}
+.notificationIcon:hover +.notificationHoverBox{
+    display: block;
 }
 
-.midSection#midBlur.active{
-    filter: blur(10px);
+.profileIcon{
+    margin-left: 15px;
 }
-
-.rightSection#rightBlur.active{
-    filter: blur(10px);
+.profileHoverBox{
+    position: absolute;
+    display: none;
+    width: 60px;
+    height: 20px;
+    margin-top: 13px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(59, 59, 59, 0.68);
+    color: white;
+    border-radius: 5px;
+    font-size: .8rem;
+    font-weight: 400;
 }
-
-.container{
-    position:fixed;
-    border: 2px solid white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    top:10%;
-    left:30%;
-    bottom:4px;
-    width:800px;
-    height: 900px;
+.profileIcon img{
+    height: 30px;
+    border-radius: 100%; 
+    cursor: pointer; 
+    transition: .3s;  
+}
+.profileIcon img:hover{
+    opacity: .7;   
+}
+.profileIcon:hover + .profileHoverBox{
+    display: block;
+}
+/* -----------Proud Moments Section------------ */
+.moments{
+    position: fixed;
+    width:100%; 
+    height: auto;
+    top: 90px; 
+    left:0px;
+   
+}
+.scrollmenu {
     overflow: auto;
-    opacity: 0;
-    transition: 0.5s;
-    background-color: #8AC185;
-    border-radius: 20px;
-    visibility: hidden;
+    white-space: nowrap;
+    padding-left: 10px;
+  }
+.addIcon{
+    height: 60px;
+} 
+.addButton{
+    background-color: rgb(103, 133, 159);
+    display: inline-block;
+    color: white;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 30px ;
+    text-align: center;
+    text-decoration: none;
 }
-.container::-webkit-scrollbar {
+.proudMoments{
+    background-color: rgb(38, 117, 186);
+    display: inline-block;
+    color: white;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 30px ;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+/* Hiding scroll bar for Moments section for every browser */
+.scrollmenu::-webkit-scrollbar {
     display: none;
   }
+.scrollmenu {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
 
-.container#popup.active{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
 
-.container .companyLogo{
-    padding-top: 50px;
+/* -------------------Main----------------------- */
+.recentUpdateBox{
     display: block;
-    height: 40px;
-    margin: 0 auto;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-top: 220px;
+    width: 1200px;
+    height: 300px;
+    background-color: #2a2a2a;
+    background-image: url(assets/greenWallBg.jpg);
+    background-size: 1200px 400px;
+    background-repeat: no-repeat;
+}
+.recentUpdateBoxData{
+    
 }
 
-.container .mainHeading{
-    color: white;
-    padding-top: 10px;
-    text-align: center;
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0 auto;
-}
 
-.container .companyName{
-    color: #f3ec78;
-    padding-top: 10px;
-    text-align: center;
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0 auto;
+/* --------------Suggestion Section---------- */
+.suggestionText{
+    margin-top: 60px;
 }
-
-.listOne{
-    color: white;
-    width: 650px;
-    font-size: 1rem;
-    display: block;
-    margin: 0 auto;
-    font-weight: 400;
-    box-sizing: border-box;
-}
-.spacedOne{
-    list-style: none;
+.suggestionColumn{
+    width: 1990px;
+    height: 30px;
     display: flex;
+    margin: 0px auto;
+    align-items: center;
     justify-content: space-between;
 }
-
-.container .companyAddress{
-    color: white;
-    text-align: center;
-    display: block;
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0 auto;
-}
-.container .set{
-    position: relative;
-    min-height: 550px;
-    width: auto;
-}
-.container .headingText{
-    color: white;
-    padding-top: 10px;
-    padding-left: 90px;
+.referenceText{
     font-size: 1.2rem;
     font-weight: 600;
-    text-decoration-line: underline;
 }
-
-.container .data{
-    color: white;
-    padding-left: 90px;
-    width: 650px;
-    text-align: justify;
+.viewAllButton{
     font-size: 1.2rem;
     font-weight: 400;
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+.viewAllButton:hover{
+    color: #777;
+}
+.horizontalLine{
+    width: 1990px;
+    border: 1px solid rgba(0, 0, 0, 0.087);
+}
+.forYouSection{
+    width: 100%;
+    padding-top: 20px;
 }
 
-.container .applyButton{
-    text-transform: uppercase;
-    background-color: #f3ec78;
-    background: linear-gradient(90deg, var(--c1, #c8dfc6), var(--c2, #f8f9f8) 25%, var(--c1, #5d9658), var(--c2, #689c63) 100%) var(--x, 0)/ 400%;
-    color: transparent;
-    width: 250px;
-    height: 40px;
+/* ----Column Section--- */
+.suggestedNgoColumn{
+    display: flex;
+    justify-content: space-between;
+    width: 2000px;
     margin: 0px auto;
-    display: block;
-    margin-bottom: 30px;
+}
+.ngoBox{
+    width: 450px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.ngoDisplayPicture{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #000000;  
+}
+.ngoDetailBox{
+    background-color: #b6b6b6;
+    margin-left: 80px;
+    height: 130px;
+    width: 370px;
     border-radius: 10px;
-    color: #8AC185;
-    border: 1px solid #8AC185;
-    font-size: 1rem;
-    font-weight: 600;
-    -webkit-transition: all 0.7;
-    transition: all .7s;
-    cursor: pointer;
 }
-.container .applyButton:hover {
-    --x:100%;
-    color: white;
+
+
+.ngoDetailBox#boxOne{
+    background-color: #F1F7ED;
 }
-.container .closeButton{
-    position: fixed;
+.ngoDetailBox#boxTwo{
+    background-color: #243E36;
+}
+.ngoDetailBox#boxThree{
+    background-color: #7CA982;
+}
+.ngoDetailBox#boxFour{
+    background-color: #E0EEC6;
+}
+
+/* --------------Near You Section---------------- */
+.nearYouBox{
+    margin-top: 60px;
+}
+.nearYouColumn{
+    width: 1990px;
     height: 30px;
-    margin: 20px 20px;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
 }
-.container .closeButton:hover{
-    cursor: pointer;
+.nearYouText{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
 }
+.nearYouText p{
+    padding-top: 2px;
+    padding-left: 3px;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
