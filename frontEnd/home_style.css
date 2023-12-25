@@ -216,21 +216,42 @@ body{
 
 /* -------------------Main----------------------- */
 .recentUpdateBox{
-    display: block;
+    display: flex;
     border-radius: 10px;
     margin: 0px auto;
     margin-top: 220px;
     width: 1200px;
     height: 300px;
+    justify-content: center;
     background-color: #2a2a2a;
     background-image: url(assets/greenWallBg.jpg);
     background-size: 1200px 400px;
     background-repeat: no-repeat;
 }
 .recentUpdateBoxData{
-    
+    width: 90%;
+    height: 80%; 
+    margin-top: 30px;
 }
-
+.roleText{
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+.ngoName{
+    margin: 0px auto;
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 20px;
+    background: linear-gradient(#ffffff 0%,#ffffffc8 40%, #fdfdfd60 70%, #fdfdfd00 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
 
 /* --------------Suggestion Section---------- */
 .suggestionText{
