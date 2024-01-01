@@ -242,6 +242,7 @@ body{
 }
 .ngoName{
     margin: 0px auto;
+    margin-bottom: 10px;
     font-size: 4rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -252,7 +253,47 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
 }
+.detailsSection{
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.detailsSection i{
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 2px;
+}
 
+.subContainer{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.viewMoreButton{
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    align-content: end;
+    cursor: pointer;
+}
+.viewMoreButton:hover{
+    background-color: #ffffff63;
+    color: white;
+    font-weight: 600;
+}
 /* --------------Suggestion Section---------- */
 .suggestionText{
     margin-top: 60px;
